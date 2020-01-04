@@ -3,10 +3,14 @@ html,body {
 }
 /* 1、顶部 */
 .top {
+    display: flex;
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    left: 0;
     width: 100%;
     height: calc(45rem / 38);
     background-color: #171823;
-    position: relative;
 }
 
 .top-cont {
@@ -40,7 +44,6 @@ html,body {
 }
 
 .top-button a{
-    /* float: right; */
     position: absolute;
     right: calc(15rem / 38);
     bottom: calc(12rem / 38);
@@ -58,6 +61,7 @@ html,body {
     height: calc(45rem / 38);
     background-color: #db9e3f;
     text-align: center;
+    margin-top: calc(45rem / 38);
 }
 
 .top-nav a {

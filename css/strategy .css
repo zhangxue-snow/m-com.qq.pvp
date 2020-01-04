@@ -1,12 +1,17 @@
 html,body {
     background-color: #ededed;
+    position: relative;
 }
 /* 1、顶部 */
 .top {
+    display: flex;
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    left: 0;
     width: 100%;
     height: calc(45rem / 38);
     background-color: #171823;
-    position: relative;
 }
 
 .top-cont {
@@ -58,6 +63,7 @@ html,body {
     height: calc(45rem / 38);
     background-color: #db9e3f;
     text-align: center;
+    margin-top: calc(45rem / 38);
 }
 
 .top-nav a {
@@ -72,7 +78,6 @@ html,body {
 /* 3、轮播图 */
 .poster {
     width: 100%;
-    /* width: calc(380rem / 38); */
     height: calc(165rem / 38);
 }
 
@@ -81,8 +86,38 @@ html,body {
     height: calc(165rem / 38);
 }
 
+/* 4、热门视频 */
+.hotvideo-title {
+    width: 100%;
+    height: calc(50rem / 38);
+    line-height: calc(50rem / 38);
+    position: relative; 
+}
+
+.hotvideo-title i {
+    position: absolute;
+    top: calc(17rem / 38);
+    left: 0;
+    width: calc(15rem / 38);
+    height: calc(15rem / 38);
+    background-image: url(../img/index.png);
+    background-position: calc(0rem / 38) calc(220rem / 38);
+    background-size: calc(400rem / 38);
+}
+v
+.hotvideo-title h2 {
+    color: #212222;
+    font-size: 16px;
+    font-weight: normal;
+    border-bottom: calc(1rem / 38) solid #ccc;
+    padding-left: calc(20rem / 38);
+}
+
+.hotvideo-title a {
+    float: right;
+}
 /* 7、精彩视频 */
-.video {
+.column,.compete,.video {
     background-color: #fff;
     height: 100%;
     margin-top: calc(15rem / 38);
@@ -91,33 +126,36 @@ html,body {
 }
 
 /* 7.1 标题 */
-.video-title {
+
+.column-title,.compete-title,.video-title {
     width: 100%;
     height: calc(50rem / 38);
     line-height: calc(50rem / 38);
     position: relative; 
 }
 
-.video-title i {
+
+.column-title i,.compete-title i,.video-title i {
     position: absolute;
-    top: calc(17rem / 38);
+    top: calc(18rem / 38);
     left: 0;
     width: calc(15rem / 38);
     height: calc(15rem / 38);
     background-image: url(../upload/spr.png);
-    background-position: calc(0rem / 38) calc(220rem / 38);
-    background-size: calc(400rem / 38);
+    background-position: calc(144rem / 38) calc(267rem / 38);
+    background-size: calc(100rem / 38);
 }
 
-.video-title h2 {
+
+.column-title h2,.compete-title h2,.video-title h2{
     color: #212222;
     font-size: 16px;
-    font-weight: normal;
     border-bottom: calc(1rem / 38) solid #ccc;
     padding-left: calc(20rem / 38);
 }
 
-.video-title a {
+
+.column-title a,.compete-title a,.video-title a{
     position: absolute;
     top: calc(15rem / 38);
     right: 0;
@@ -131,12 +169,16 @@ html,body {
 /* 7.2 内容 */
 
 /* 7.2.1 视频内容导航 */
+.column-cont-nav,
+.compete-cont-nav,
 .video-cont-nav {
     width: 100%;
     height: calc(50rem / 38);
     line-height: calc(50rem / 38);
 }
 
+.column-cont-nav a,
+.compete-cont-nav a,
 .video-cont-nav a {
     float: left;
     display: block;
@@ -144,14 +186,21 @@ html,body {
     font-size: calc(13rem / 38);
 }
 
+
+.column-cont-nav a:first-child,
+.compete-cont-nav a:first-child,
 .video-cont-nav a:first-child {
     color: #d59b40;
 }
+.column-cont-nav a:last-child,
+.compete-cont-nav a:last-child,
 .video-cont-nav a:last-child {
     padding-right: 0;
 }
 
 /* 7.2.2 视频内容列表 */
+.column-cont-list,
+.compete-cont-list,
 .video-cont-list {
     width: 100%;
     /* height: 100%; */
@@ -159,6 +208,8 @@ html,body {
     overflow: hidden;
 }
 
+.column-cont-list li,
+.compete-cont-list li,
 .video-cont-list li {
     float: left;
     width: calc(175rem / 38);
@@ -167,16 +218,22 @@ html,body {
     position: relative;
 }
 
+.column-cont-list li:nth-child(2n),
+.compete-cont-list li:nth-child(2n),
 .video-cont-list li:nth-child(2n) {
     margin-right: 0;
 }
 
+.column-cont-list li img,
+.compete-cont-list li img,
 .video-cont-list li img {
     width: calc(175rem / 38);
     height: calc(102rem / 38);
     
 }
 
+.column-cont-list li::before,
+.compete-cont-list li::before,
 .video-cont-list li::before {
     content: " ";
     display: block;
@@ -190,7 +247,9 @@ html,body {
     background-size: calc(420rem / 38) calc(440rem / 38);
 }
 
-.video-cont-list span{
+.column-cont-list span,
+.compete-cont-list span,
+.video-cont-list span {
     content: " ";
     display: block;
     position: absolute;
@@ -204,6 +263,8 @@ html,body {
     padding: 0 calc(4rem / 38);
 }
 
+.column-cont-list li p,
+.compete-cont-list li p,
 .video-cont-list li p {
     font-size: calc(13rem / 38);
     color: #222;
@@ -216,16 +277,19 @@ html,body {
     display: -webkit-box;
 }
 
+.column-cont-list li i,
+.compete-cont-list li i,
 .video-cont-list li i {
     float: left;
     font-size: calc(12rem / 38);
     color: #7a7a80;
     line-height: 2;
     padding-left: calc(20rem / 38);
-    
     position: relative;
 }
 
+.column-cont-list li i::before,
+.compete-cont-list li i::before,
 .video-cont-list li i::before {
     content: " ";
     display: block;
@@ -240,7 +304,7 @@ html,body {
 }
 
 /* 7.3 更多 */
-.video-more {
+.column-more,.compete-more,.video-more {
     width: 100%;
     height: calc(35rem / 38);
     line-height: calc(35rem / 38);
@@ -252,12 +316,138 @@ html,body {
     
 }
 
+.column-more a,
+.compete-more a,
 .video-more a {
     display: block;
     color: #7a7a80;
 }
 
-.video-more a>em {
+.column-more a>em,
+.compete-more a>em,
+.video-more a>em{
     color: #d59b40;
     font-weight: normal;
+}
+
+.video-cont-nav a {
+    padding-right: calc(50rem / 38);
+}
+
+/* 8.图文攻略 */
+.imgtext {
+    background-color: #fff;
+    height: 100%;
+    margin-top: calc(15rem / 38);
+    box-sizing: border-box;
+    padding:0 calc(20rem / 38);
+}
+/* 8.1 图文攻略标题 */
+.imgtext-title {
+    width: 100%;
+    height: calc(50rem / 38);
+    line-height: calc(50rem / 38);
+    position: relative; 
+}
+
+.imgtext-title i {
+    position: absolute;
+    top: calc(19rem / 38);
+    left: 0;
+    width: calc(15rem / 38);
+    height: calc(15rem / 38);
+    background-image: url(../img/index.png);
+    background-position: calc(0rem / 38) calc(190rem / 38);
+    background-size: calc(400rem / 38);
+}
+
+.imgtext-title h2 {
+    color: #212222;
+    font-size: 16px;
+    font-weight: normal;
+    border-bottom: calc(1rem / 38) solid #ccc;
+    padding-left: calc(20rem / 38);
+}
+
+.imgtext-title a {
+    position: absolute;
+    top: calc(15rem / 38);
+    right: 0;
+    width: calc(20rem / 38);
+    height: calc(20rem / 38);
+    background-image: url(../img/index.png);
+    background-position: calc(-181rem / 38) calc(223rem / 38);
+    background-size: calc(400rem / 38);
+}
+
+/* 8.2 图文攻略内容 */
+.imgtext-cont {
+    width: 100%;
+    height: 100%;
+}
+
+/* 8.1.1 内容导航 */
+.imgtext-cont-nav {
+    width: 100%;
+    height: calc(50rem / 38);
+    line-height: calc(50rem / 38);
+}
+
+.imgtext-cont-nav a {
+    color: #343440;
+    font-size: calc(13rem / 38);
+    padding-right: calc(49rem / 38);
+}
+
+.imgtext-cont-nav a:last-child {
+    padding-right: 0;
+}
+
+/* 8.1.2 内容列表 */
+.imgtext-cont-list {
+    width: 100%;
+    padding-bottom: calc(20rem / 38);
+}
+
+.imgtext-cont-list li {
+    width: 100%;
+    height: calc(80rem / 38);
+    border-bottom: calc(1rem / 38) solid #ccc;
+    box-sizing: border-box;
+    margin-bottom: calc(10rem / 38);
+}
+.imgtext-cont-list li:last-child {
+    border-bottom: none;
+}
+
+.imgtext-cont-list img {
+    float: left;
+    width: calc(116rem / 38);
+    height: calc(70rem / 38);
+}
+
+.imgtext-cont-list-text {
+    float: left;
+    width: calc(190rem / 38);
+    padding-left: calc(10rem / 38);
+}
+
+
+.imgtext-cont-list-text h2 {
+    color: #222;
+    font-size: calc(15rem / 38);
+    font-weight: normal;
+    line-height: 1.5;
+    overflow: hidden;
+    word-break:break-all;
+    text-overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    padding: calc(1rem / 38) 0;
+}
+
+.imgtext-cont-list-text p {
+    color: #bdc2c5;
+    padding-top: calc(10rem / 38);
 }
