@@ -1,0 +1,34 @@
+html,body {
+    width: 100%;
+    height: 100%;
+    background-image: url(../upload/bg_p.jpg);
+    background-size: 100% 100%;
+}
+
+ul {
+    width: 100%;
+    height: 100%;
+    margin: 0 calc(10rem / 38);
+    margin-bottom: calc(55rem / 38);
+}
+
+ul li {
+    float: left;
+    margin-top: calc(10rem / 38);
+}
+
+ul li:nth-child(2n) {
+    margin-left: calc(10rem / 38);
+}
+
+ul img {
+    width: calc(175rem / 38);
+    height: calc(240rem / 38);
+}
+
+/* 3、底部 */
+.bottom {
+    width: 100%;
+    height: calc(55rem / 38);
+    background-color: red;
+}

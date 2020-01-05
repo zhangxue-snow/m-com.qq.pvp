@@ -45,7 +45,6 @@ html,body {
 }
 
 .top-button a{
-    /* float: right; */
     position: absolute;
     right: calc(15rem / 38);
     bottom: calc(12rem / 38);
@@ -73,6 +72,18 @@ html,body {
     width: 33.33333%;
     line-height: calc(45rem / 38);
     font-size: calc(14rem / 38);
+    position: relative;
+}
+
+.top-nav a:nth-child(2)::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: calc(35rem / 38);
+    left: calc(33rem / 38);
+    width: calc(60rem / 38);
+    height: calc(3rem / 38);
+    background-color: #fff;
 }
 
 /* 3、轮播图 */
@@ -87,14 +98,24 @@ html,body {
 }
 
 /* 4、热门视频 */
+.hotvideo {
+    width: 100%;
+    padding: 0 calc(10rem / 38);
+    box-sizing: border-box;
+    background-color: #fff;
+    margin-top: calc(10rem / 38);
+ } 
+
 .hotvideo-title {
     width: 100%;
     height: calc(50rem / 38);
     line-height: calc(50rem / 38);
-    position: relative; 
+    overflow: hidden;
+    position: relative;
+    border-bottom: calc(1rem / 38) solid #ccc; 
 }
 
-.hotvideo-title i {
+ .hotvideo-title i {
     position: absolute;
     top: calc(17rem / 38);
     left: 0;
@@ -104,18 +125,167 @@ html,body {
     background-position: calc(0rem / 38) calc(220rem / 38);
     background-size: calc(400rem / 38);
 }
-v
+
 .hotvideo-title h2 {
+    float: left;
     color: #212222;
     font-size: 16px;
-    font-weight: normal;
-    border-bottom: calc(1rem / 38) solid #ccc;
     padding-left: calc(20rem / 38);
 }
 
-.hotvideo-title a {
+.hotvideo-title ul {
     float: right;
 }
+
+.hotvideo-title ul a {
+    font-size: calc(13rem / 38);
+    padding-left: calc(12rem / 38);
+}
+
+.hotvideo-title ul a:first-child {
+    color: #d59b40;
+}
+/* 4.2 热门视频内容 */
+.hotvideo-cont {
+    width: 100%;
+}
+
+.hotvideo-cont-list2 {
+    width: 100%;
+    height: calc(36rem / 38);
+    border-bottom: calc(1rem / 38) solid #ccc;
+}
+
+.hotvideo-cont-list2:last-child {
+    border-bottom: none;
+}
+
+.hotvideo-cont-list1 {
+    width: 100%;
+    height: calc(83rem / 38);
+    box-sizing: border-box;
+    border-bottom: calc(1rem / 38) solid #ccc;
+}
+
+.hotvideo-cont-list1 a {
+    display: block;
+    padding-top: calc(10rem / 38);
+    box-sizing: border-box;
+    
+}
+.hotvideo-cont-list1 img {
+    float: left;
+    width: calc(120rem / 38);
+    height: calc(65rem / 38);
+}
+
+.hotvideo-cont-list1-text {
+    float: left;
+    width: calc(220rem / 38);
+    padding-left: calc(15rem / 38);
+    box-sizing: border-box;
+}
+
+.hotvideo-cont-list1-text span {
+    float: left;
+    width: 100%;
+    height: calc(40rem / 38);
+    line-height: 1.8;
+    font-size: calc(13rem / 38);
+}
+
+.hotvideo-cont-list1-text i {
+    float: left;
+    font-size: calc(12rem / 38);
+    color: #7a7a80;
+    padding-top: calc(14rem / 38);
+    padding-left: calc(22rem / 38);
+    position: relative;
+}
+
+.hotvideo-cont-list1-text i::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: calc(10rem / 38);
+    left: calc(3rem / 38);
+    width: calc(14rem / 38);
+    height: calc(15rem / 38);
+    background-image: url(../img/index.png);
+    background-position: calc(-141rem / 38) calc(-227rem / 38);
+    background-size: calc(450rem / 38) calc(450rem / 38);
+}
+
+
+.hotvideo-cont-list1-text em {
+    float: left;
+    font-size: calc(12rem / 38);
+    color: #7a7a80;
+    padding-top: calc(14rem / 38);
+    padding-left: calc(22rem / 38);
+    position: relative;
+}
+
+.hotvideo-cont-list1-text em::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: calc(10rem / 38);
+    left: calc(6rem / 38);
+    width: calc(14rem / 38);
+    height: calc(15rem / 38);
+    background-image: url(../upload/spr.png);
+    background-position: calc(15rem / 38) calc(-227rem / 38);
+    background-size: calc(90rem / 38) calc(90rem / 38);
+}
+.hotvideo-cont-list2 p {
+    float: left;
+    width: calc(295rem / 38);
+    line-height: calc(36rem / 38);
+    color: #343440;
+    font-size: calc(13rem / 38);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.hotvideo-cont-list2 i {
+    float: right;
+    font-size: calc(12rem / 38);
+    color: #7a7a80;
+    line-height: calc(36rem / 38);
+    padding-left: calc(20rem / 38);
+    position: relative;
+}
+
+.hotvideo-cont-list2 i::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: calc(7rem / 38);
+    left: calc(3rem / 38);
+    width: calc(14rem / 38);
+    height: calc(15rem / 38);
+    background-image: url(../img/index.png);
+    background-position: calc(-141rem / 38) calc(-227rem / 38);
+    background-size: calc(450rem / 38) calc(450rem / 38);
+}
+
+/* 4.3 热门视频收起 */
+.hotvideo-up {
+    width: 100%;
+    height:calc(35rem / 38);
+    text-align: center;
+    background-color: #fff;
+    border-top: calc(1rem / 38) solid #ccc;
+}
+
+.hotvideo-up a {
+    color: #7a7a80;
+    line-height: calc(35rem / 38);
+    
+}
+
 /* 7、精彩视频 */
 .column,.compete,.video {
     background-color: #fff;

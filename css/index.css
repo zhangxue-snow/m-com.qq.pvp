@@ -71,6 +71,18 @@ html,body {
     width: 33.33333%;
     line-height: calc(45rem / 38);
     font-size: calc(14rem / 38);
+    position: relative;
+}
+
+.top-nav a:nth-child(1)::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: calc(35rem / 38);
+    left: calc(46rem / 38);
+    width: calc(35rem / 38);
+    height: calc(3rem / 38);
+    background-color: #fff;
 }
 
 /* 3、轮播图 */
@@ -420,7 +432,7 @@ nav .mainnav {
     width: calc(15rem / 38);
     height: calc(15rem / 38);
     background-image: url(../img/index.png);
-    background-position: calc(0rem / 38) calc(220rem / 38);
+    background-position: calc(0rem / 38) calc(221rem / 38);
     background-size: calc(400rem / 38);
 }
 
