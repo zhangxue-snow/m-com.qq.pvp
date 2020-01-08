@@ -1,8 +1,9 @@
 html,body {
     width: 100%;
     height: 100%;
-    position: relative;    background-image: url(../upload/bg_p.jpg);
-    background-size: 100% 100%;
+    position: relative;    
+    background-image: url(../image/upload/bg_p.jpg);
+    background-size: cover;
 }
 
 /* 1、顶部导航 */
@@ -13,7 +14,7 @@ html,body {
     position: fixed;
     top: 0;
     left: 0;
-    background-image: url(../upload/bg_p.jpg);
+    background-image: url(../image/upload/bg_p.jpg);
     background-size: 100% 100%;
     background-color: aquamarine;
     padding-left: calc(15rem / 38);
@@ -33,7 +34,7 @@ html,body {
 }
 
 .topnav-list:first-child {
-    background-image: url(../upload/top-1.png);
+    background-image: url(../image/upload/top-1.png);
     background-size: 100% 100%;
 }
 
@@ -84,37 +85,53 @@ main {
 }
 
 /* 3、底部 */
-footer {
-    width: 100%;
-    height: calc(99rem / 38); 
-    display: flex;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    background-color: aquamarine;
-}
+
 .button {
     width: 100%;
     height: calc(44rem / 38);
-    background-color: blue;
+    display: flex;
+    position: fixed;
+    /* bottom: calc(128rem / 50);
+    left:0; */
+
+
+    bottom: calc(72rem / 50);
+    left: 0;
+    background-image: url(../image/image/upload/bottom-3.png) ;
+    background-position: calc(-4rem / 38) calc(45rem / 38);
+    background-size: 100% auto;
 }
-.botton-ul {
-    width: 100%;
-    height: 100%;
-}
+
+
 .botton-list {
-    width: 100%;
-    height: 100%;
+    float: left;
+    width: 50%;
+    height: calc(44rem / 38);  
 }
+
+.botton-list a {
+    display: block;
+    float: left;
+    width: 50%;
+    height: calc(44rem / 38);
+    background-color: aquamarine;
+     /* background-position: calc(50rem / 38) calc(50rem / 38); 
+     background-size: 100% auto;  */
+ } 
 
 .botton-list img {
     width: 100%;
+    height: 100%;
 }
 .bottom {
     width: 100%;
     height: calc(55rem / 38);
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
     background-color: cadetblue;
-    background-image: url(../upload/bottom-1.jpg);
+    background-image: url(../image/upload/bottom-1.jpg);
 }
 .bottom-ul {
     width: 100%;
@@ -130,7 +147,7 @@ footer {
 }
 
 .bottom-list:nth-child(3) {
-    background-image: url(../upload/buttom-2.jpg);
+    background-image: url(../image/upload/buttom-2.jpg);
     background-size: 100% 100%;
 }
 
