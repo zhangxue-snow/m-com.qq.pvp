@@ -1,0 +1,73 @@
+html,body {
+    width: 100%;
+    height: 100%;
+    position: relative;    
+    background-image: url(../image/bg_p.jpg);
+    background-size: cover;
+}
+
+/* 1、顶部导航 */
+.topnav {
+    width: 100%;
+    height: calc(35rem / 38);
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: url(../image/bg_p.jpg);
+    background-size: 100% 100%;
+    /* padding-left: calc(15rem / 38); */
+    box-sizing: border-box;
+}
+
+.topnav p {
+    padding-left: calc(45rem / 38);
+    text-align: center;
+    color: #fff;
+    line-height: calc(35rem / 38);
+}
+
+.topnav a {
+    display: block;
+    width: calc(115rem / 38);
+    height: calc(45rem / 38);
+}
+
+.topnav a img {
+    width: calc(115rem / 38);
+    height: calc(45rem / 38);
+}
+/* 2、主体 */
+main {
+    width: 100%;
+    margin-top: calc(35rem / 38);
+    padding-bottom: calc(35rem / 38);
+    overflow: hidden;
+}
+
+.main-ul {
+    width: 100%;
+    height: 100%;
+    height: 100%;
+    padding: 0 calc(10rem / 38);
+    margin-bottom: calc(55rem / 38);
+    box-sizing: border-box;
+}
+
+.main-ul .main-list {
+    float: left;
+    width: calc(175rem / 38);
+    height: calc(78rem / 38);
+    margin-top: calc(10rem / 38);
+    box-sizing: border-box;
+}
+
+.main-ul .main-list:nth-child(2n) {
+    margin-left: calc(10rem / 38);
+}
+
+.main-ul img {
+    width: calc(175rem / 38);
+    height: calc(78rem / 38);
+}
+

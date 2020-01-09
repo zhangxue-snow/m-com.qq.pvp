@@ -2,7 +2,7 @@ html,body {
     width: 100%;
     height: 100%;
     position: relative;    
-    background-image: url(../image/upload/bg_p.jpg);
+    background-image: url(../image/bg_p.jpg);
     background-size: cover;
 }
 
@@ -14,7 +14,7 @@ html,body {
     position: fixed;
     top: 0;
     left: 0;
-    background-image: url(../image/upload/bg_p.jpg);
+    background-image: url(../image/bg_p.jpg);
     background-size: 100% 100%;
     background-color: aquamarine;
     padding-left: calc(15rem / 38);
@@ -34,7 +34,7 @@ html,body {
 }
 
 .topnav-list:first-child {
-    background-image: url(../image/upload/top-1.png);
+    background-image: url(../image/top-1.png);
     background-size: 100% 100%;
 }
 
@@ -53,10 +53,11 @@ html,body {
 /* 2、主体 */
 main {
     width: 100%;
-    height:200%;
+    /* height:100%; */
     margin-top: calc(40rem / 38);
     margin-bottom: calc(60rem / 38); 
-    /* padding-bottom: calc(60rem / 38); */
+    padding-bottom: calc(60rem / 38);
+    overflow: hidden;
 }
 
 .main-ul {
@@ -97,7 +98,7 @@ main {
 
     bottom: calc(72rem / 50);
     left: 0;
-    background-image: url(../image/image/upload/bottom-3.png) ;
+    background-image: url(../image/bottom-3.png) ;
     background-position: calc(-4rem / 38) calc(45rem / 38);
     background-size: 100% auto;
 }
@@ -131,7 +132,7 @@ main {
     bottom: 0;
     left: 0;
     background-color: cadetblue;
-    background-image: url(../image/upload/bottom-1.jpg);
+    background-image: url(../image/bottom-1.jpg);
 }
 .bottom-ul {
     width: 100%;
@@ -147,7 +148,7 @@ main {
 }
 
 .bottom-list:nth-child(3) {
-    background-image: url(../image/upload/buttom-2.jpg);
+    background-image: url(../image/buttom-2.jpg);
     background-size: 100% 100%;
 }
 

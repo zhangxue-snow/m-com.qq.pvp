@@ -26,7 +26,7 @@ html,body {
     top: calc(7rem / 38);
     width: calc(30rem / 38);
     height: calc(30rem / 38);
-    background-image: url(../img/index.png);
+    background-image: url(../image/index.png);
     background-position: 0px 3.9rem;
     background-size: 1260%
 }
@@ -51,7 +51,7 @@ html,body {
     display: block;
     width: calc(60rem / 38);
     height: calc(25rem / 38);
-    background-image: url(../img/index.png);
+    background-image: url(../image/index.png);
     background-position: calc(305rem / 38) calc(-755rem / 38);
     background-size: calc(360rem / 38) calc(450rem / 38);
 }
@@ -121,7 +121,7 @@ html,body {
     left: 0;
     width: calc(15rem / 38);
     height: calc(15rem / 38);
-    background-image: url(../img/index.png);
+    background-image: url(../image/index.png);
     background-position: calc(0rem / 38) calc(220rem / 38);
     background-size: calc(400rem / 38);
 }
@@ -211,7 +211,7 @@ html,body {
     left: calc(3rem / 38);
     width: calc(14rem / 38);
     height: calc(15rem / 38);
-    background-image: url(../img/index.png);
+    background-image: url(../image/index.png);
     background-position: calc(-141rem / 38) calc(-227rem / 38);
     background-size: calc(450rem / 38) calc(450rem / 38);
 }
@@ -234,7 +234,7 @@ html,body {
     left: calc(6rem / 38);
     width: calc(14rem / 38);
     height: calc(15rem / 38);
-    background-image: url(../upload/spr.png);
+    background-image: url(../image/spr.png);
     background-position: calc(15rem / 38) calc(-227rem / 38);
     background-size: calc(90rem / 38) calc(90rem / 38);
 }
@@ -266,7 +266,7 @@ html,body {
     left: calc(3rem / 38);
     width: calc(14rem / 38);
     height: calc(15rem / 38);
-    background-image: url(../img/index.png);
+    background-image: url(../image/index.png);
     background-position: calc(-141rem / 38) calc(-227rem / 38);
     background-size: calc(450rem / 38) calc(450rem / 38);
 }
@@ -311,7 +311,7 @@ html,body {
     left: 0;
     width: calc(15rem / 38);
     height: calc(15rem / 38);
-    background-image: url(../upload/spr.png);
+    background-image: url(../image/spr.png);
     background-position: calc(144rem / 38) calc(267rem / 38);
     background-size: calc(100rem / 38);
 }
@@ -331,7 +331,7 @@ html,body {
     right: 0;
     width: calc(20rem / 38);
     height: calc(20rem / 38);
-    background-image: url(../img/index.png);
+    background-image: url(../image/index.png);
     background-position: calc(-181rem / 38) calc(223rem / 38);
     background-size: calc(400rem / 38);
 }
@@ -412,7 +412,7 @@ html,body {
     left: calc(61rem / 38);
     width: calc(45rem / 38);
     height: calc(45rem / 38);
-    background-image: url(../img/index.png);
+    background-image: url(../image/index.png);
     background-position: calc(-75rem / 38) calc(-208rem / 38);
     background-size: calc(420rem / 38) calc(440rem / 38);
 }
@@ -468,7 +468,7 @@ html,body {
     left: calc(3rem / 38);
     width: calc(14rem / 38);
     height: calc(15rem / 38);
-    background-image: url(../img/index.png);
+    background-image: url(../image/index.png);
     background-position: calc(-141rem / 38) calc(-227rem / 38);
     background-size: calc(450rem / 38) calc(450rem / 38);
 }
@@ -526,7 +526,7 @@ html,body {
     left: 0;
     width: calc(15rem / 38);
     height: calc(15rem / 38);
-    background-image: url(../img/index.png);
+    background-image: url(../image/index.png);
     background-position: calc(0rem / 38) calc(190rem / 38);
     background-size: calc(400rem / 38);
 }
@@ -545,7 +545,7 @@ html,body {
     right: 0;
     width: calc(20rem / 38);
     height: calc(20rem / 38);
-    background-image: url(../img/index.png);
+    background-image: url(../image/index.png);
     background-position: calc(-181rem / 38) calc(223rem / 38);
     background-size: calc(400rem / 38);
 }

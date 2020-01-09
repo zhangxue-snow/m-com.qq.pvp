@@ -27,7 +27,7 @@ html,body {
     top: calc(7rem / 38);
     width: calc(30rem / 38);
     height: calc(30rem / 38);
-    background-image: url(../image/img/index.png);
+    background-image: url(../image/index.png);
     background-position: 0px 3.9rem;
     background-size: 1260%
 }
@@ -52,7 +52,7 @@ html,body {
     display: block;
     width: calc(60rem / 38);
     height: calc(25rem / 38);
-    background-image: url(../image/img/index.png);
+    background-image: url(../image/index.png);
     background-position: calc(305rem / 38) calc(-755rem / 38);
     background-size: calc(360rem / 38) calc(450rem / 38);
 }
